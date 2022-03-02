@@ -1,0 +1,32 @@
+@use '../../scss/' as *;
+
+
+nav{
+    background:rgba(0,0,0,0.3);
+    width:max-content;
+    padding:.7rem 1.7rem;
+    z-index: 2;
+    position:fixed;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:2rem;
+    gap:.8rem;
+    border-radius:3rem;
+    backdrop-filter: blur(25px);
+    display:flex;
+    a{
+        background-color: transparent;
+        padding:.9rem;
+        display:flex;
+        border-radius: 50%;
+        color:var(--color-light);
+        font-size: 1.1rem;
+        &:hover{
+            background: rgba(0,0,0,.4);
+        }
+        &.active{
+            background: var(--color-bg);
+            color:var(--color-white);
+        }
+    }
+}
